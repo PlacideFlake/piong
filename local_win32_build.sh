@@ -2,8 +2,8 @@
 
 set -x
 
-export UNITY_EXECUTABLE=${UNITY_EXECUTABLE:-"/Applications/Unity/Hub/Editor/2018.3.4f1/Unity.app/Contents/MacOS/Unity"}
-export BUILD_NAME=${BUILD_NAME:-"ExampleProjectName"}
+export UNITY_EXECUTABLE=${UNITY_EXECUTABLE:-"/Applications/Unity/Hub/Editor/2018.3.4f1/Unity.app/Contents/Windows/Unity"}
+export BUILD_NAME=${BUILD_NAME:-"piong"}
 
 BUILD_TARGET=StandaloneLinux64 ./ci/build.sh
 BUILD_TARGET=StandaloneOSX ./ci/build.sh

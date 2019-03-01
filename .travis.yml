@@ -2,8 +2,8 @@ sudo: required
 language: bash
 env:
   global:
-  - IMAGE_NAME=gableroux/unity3d:2018.2.6f1
-  - BUILD_NAME=ExampleProjectName
+  - IMAGE_NAME=gableroux/unity3d:2018.3.4f1
+  - BUILD_NAME=piong
 services:
 - docker
 before_install:
