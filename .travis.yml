@@ -33,6 +33,7 @@ jobs:
         target_paths:
         - "$(pwd)/$TEST_PLATFORM-results.xml"
   - stage: build
+    if: branch = master
     env: BUILD_TARGET=StandaloneLinux64
     script: "chmod +x ./ci/docker_build.sh && ./ci/docker_build.sh"
     addons:
@@ -40,6 +41,7 @@ jobs:
         target_paths:
         - "./Builds/"
   - stage: build
+    if: branch = master
     env: BUILD_TARGET=StandaloneOSX
     script: "chmod +x ./ci/docker_build.sh && ./ci/docker_build.sh"
     addons:
@@ -47,6 +49,7 @@ jobs:
         target_paths:
         - "./Builds/"
   - stage: build
+    if: branch = master
     env: BUILD_TARGET=StandaloneWindows64
     script: "chmod +x ./ci/docker_build.sh &&./ci/docker_build.sh"
     addons:
@@ -54,6 +57,7 @@ jobs:
         target_paths:
         - "./Builds/"
   - stage: build
+    if: branch = master
     env: BUILD_TARGET=WebGL
     script: "chmod +x ./ci/docker_build.sh && ./ci/docker_build.sh"
     addons:
